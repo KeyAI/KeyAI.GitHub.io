@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="马洪楷，mahongkai，KeyAI,"> 
+    <meta name="keywords" content="马洪楷,mahongkai,KeyAI,code,"> 
     
     <meta name="author" content="KeyAI"> 
     <link rel="alternative" href="atom.xml" title="KeyAI&#39;s Blog" type="application/atom+xml"> 
@@ -62,8 +62,8 @@
                 
                     <div class="set">
   <div class="category-mask"></div>
-  <h1>Categories</h1>
-  
+  <h1>文章分类</h1>
+  <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/">过程记录</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%BB%E7%BB%93/">总结</a><span class="category-list-count">1</span></li></ul>
 </div>
 
                 
@@ -150,6 +150,13 @@
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 
 
 
@@ -284,7 +291,7 @@
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Inner Peace", ""],
+                strings: ["Inner Peace.", ""],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
@@ -300,40 +307,6 @@
     }
 </script>
 
-
-    
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-    <script>
-
-        var valine = new Valine();
-
-        function initValine(path) {
-            if (!path) path = window.location.pathname;
-            let language = 'en';
-            if (!language) {
-                language = 'en';
-            } else {
-                language = language.toLowerCase();
-            }
-            valine.init({
-                el: '#vcomments',
-                appId: '',
-                appKey: '',
-                notify: 'false',
-                verify: 'false',
-                avatar: 'mp',
-                placeholder: '请在此输入您的留言',
-                visitor: 'true',
-                path: path,
-                lang: language
-            });
-        }
-
-        $(document).ready(function () {
-            initValine();
-        });
-    </script>
 
 
 

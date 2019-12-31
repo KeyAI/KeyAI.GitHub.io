@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="马洪楷，mahongkai，KeyAI,"> 
+    <meta name="keywords" content="马洪楷,mahongkai,KeyAI,code,"> 
     
     <meta name="author" content="KeyAI"> 
     <link rel="alternative" href="atom.xml" title="KeyAI&#39;s Blog" type="application/atom+xml"> 
@@ -59,7 +59,7 @@
             <div class="main">
                 <div class="content animated fadeIn">
                     <div class="set">
-                        <h1 style="text-align: center">Archived</h1>
+                        <h1 style="text-align: center">文章归档</h1>
                         <p style="text-align: center">「 2 」</p>
                         <ul class="timeline timeline-centered">
                             
@@ -188,6 +188,13 @@
   }
 </script>
 
+
+
+    
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+
+    
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 
 
 
@@ -322,7 +329,7 @@
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Inner Peace", ""],
+                strings: ["Inner Peace.", ""],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
@@ -338,40 +345,6 @@
     }
 </script>
 
-
-    
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-
-    <script>
-
-        var valine = new Valine();
-
-        function initValine(path) {
-            if (!path) path = window.location.pathname;
-            let language = 'en';
-            if (!language) {
-                language = 'en';
-            } else {
-                language = language.toLowerCase();
-            }
-            valine.init({
-                el: '#vcomments',
-                appId: '',
-                appKey: '',
-                notify: 'false',
-                verify: 'false',
-                avatar: 'mp',
-                placeholder: '请在此输入您的留言',
-                visitor: 'true',
-                path: path,
-                lang: language
-            });
-        }
-
-        $(document).ready(function () {
-            initValine();
-        });
-    </script>
 
 
 
